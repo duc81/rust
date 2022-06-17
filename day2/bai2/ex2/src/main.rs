@@ -12,13 +12,12 @@ fn main() {
             count += 1;
             primes.push(num);
          }
-         count += 0;
      }
      println!("{:?}", primes);
     
  }
 
-fn vector_is_prime(num: u64, p:  &[u64]) -> bool {
+fn vector_is_prime(num: u64, p:  &Vec<u64>) -> bool {
      for &i in p {
          if num > i && num % i == 0 {
              return false;
